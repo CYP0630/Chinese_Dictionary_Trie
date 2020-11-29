@@ -7,4 +7,9 @@ Goole Drive:https://drive.google.com/drive/folders/1d3kM1GR_KXPJZC8SqwSoEQsU5VeO
 
 ## Weekly Report Record
 ### Week 1: 16/11/2020 - 22/11/2020
-Reading article
+Reading article <br>
+Write a basic trie <br>
+
+### Week 2: 23/11/2020 - 29/11/2020
+Reading related article <br>
+Improve trie <br>
