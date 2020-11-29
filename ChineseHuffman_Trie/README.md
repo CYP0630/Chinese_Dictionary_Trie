@@ -1,0 +1,2 @@
+# ChineseHuffman_trie
+哈夫曼编码与二叉字典树存储中文语料
