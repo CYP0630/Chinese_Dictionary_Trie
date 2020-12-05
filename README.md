@@ -13,3 +13,6 @@ Write a basic trie <br>
 ### Week 2: 23/11/2020 - 29/11/2020
 Reading related article <br>
 Improve trie <br>
+
+### Week 3: 30/11/2020 - 06/12/2020
+Based on Trie, we start to develop Chinese Trie <br>
