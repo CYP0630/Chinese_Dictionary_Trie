@@ -7,12 +7,22 @@ Goole Drive:https://drive.google.com/drive/folders/1d3kM1GR_KXPJZC8SqwSoEQsU5VeO
 
 ## Weekly Report Record
 ### Week 1: 16/11/2020 - 22/11/2020
-Reading article <br>
+Reading related article <br>
 Write a basic trie <br>
 
 ### Week 2: 23/11/2020 - 29/11/2020
 Reading related article <br>
-Improve trie <br>
+Chinese Input/Output in C++ <br>
 
 ### Week 3: 30/11/2020 - 06/12/2020
-Based on Trie, we start to develop Chinese Trie <br>
+Implemente Chinese Trie <br>
+
+### Week 4: 07/12/2020 - 13/12/2020
+Optimizing Chinese Trie <br>
+Implemente Huffman Chinese Trie <br>
+Start to write project report <br>
+
+### Week 5: 14/12/2020 - 15/12/2020
+Do more experiment <br>
+Prepare for oral presentation <br>
+Collect all material <br>
