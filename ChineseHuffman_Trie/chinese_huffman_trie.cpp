@@ -1,13 +1,14 @@
-/*************************************************************************
-	> File Name: huffman.cpp
-	> Author: sudingquan
-	> Mail: 1151015256@qq.com
-	> Created Time: 日  7/21 20:31:19 2019
- ************************************************************************/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <string>
+#include <cstring> 
+#include <iostream>
+#include <fstream>
+#include <sstream>
+
+using namespace std;
+
 #define MAX_SIZE 1000  //最大词长
 #define MAX_N 1000 //最大词数
 #define BASE 2
@@ -228,6 +229,26 @@ trie_node *build_trie(int word_cnt) {
 }
 
 int main() {
+    
+    
+    ifstream file("words.txt");
+    string temp;
+    while (getline(file, temp)){
+        //word[word_cnt].str = temp.c_str();
+        word[word_cnt].str;
+
+    }
+
+    /*
+    while (getline(file, temp)){
+        string str = UTF8ToGB(temp.c_str()).c_str();
+        stringstream input(str);
+        string word;
+        input >> word;
+        t.insert_str(word);
+    }
+    */
+
     while (1) {
         scanf("%s", word[word_cnt].str);
         if (strcmp((char *)word[word_cnt].str, "END") == 0) {
@@ -235,31 +256,33 @@ int main() {
         }
         word_cnt++;
     }
-    printf("输入了%d个词\n", word_cnt);
+    printf("The number of input words: %d \n", word_cnt);
     for (int i = 0; i < word_cnt; i++) {
         for (int j = 0; word[i].str[j]; j++) {
             data[word[i].str[j]] += 1;
         }
     }
-    printf("字节频次表:\n");
+    printf("Word Frequency: \n");
     for (int i = 0; i < 256; i++) {
         if (data[i] == 0) continue;
         printf("%d : %d\n", i, data[i]);
         character_cnt += 1;
     }
-    printf("总字节个数:%d\n", character_cnt);
+    printf("The number of bytes: %d\n", character_cnt);
     for (int i = 0, j = 0; i < 256; i++) {
         if (data[i] == 0) continue;
         arr[j].ch = i;
         arr[j].p = data[i];
         j++;
     }
+
     HuffmanTree *tree = build(arr, character_cnt);
-    printf("字节编码表:\n");
+    printf("Byte Encoding Table:\n");
     for (int i = 0; i < tree->n; i++) {
         printf("%d : %s\n", tree->codes[i].ch, tree->codes[i].str);
     }
-    printf("词语编码表:\n");
+
+    printf("Word Encoding Table:\n");
     for (int i = 0; i < word_cnt; i++) {
         int len = strlen((char *)word[i].str);
         for (int j = 0; j < len; j++) {
@@ -269,8 +292,9 @@ int main() {
         }
         printf("%s : %s\n", word[i].str, word[i].huffman_code);
     }
+    
     trie_node *root = build_trie(word_cnt);
-    printf("输入母串开始匹配\n");
+    printf("Input Chinese String to search \n");
     unsigned char *str = (unsigned char *)malloc(sizeof(unsigned char) * 100000);
     char *str_huffman_code = (char *)malloc(sizeof(char) * 1000000);
     scanf("%s", str);

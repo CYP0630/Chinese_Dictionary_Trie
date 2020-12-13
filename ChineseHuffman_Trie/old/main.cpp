@@ -28,12 +28,12 @@ US **convertToShortArr(UC (*str)[64], int str_cnt) {
 char huffman_code[65536][100] = {0};
 int main() {
     UC str[128][64] = {0};
-    printf("ÊäÈëÄ£Ê½´®(END½áÊø):\n");
+    printf("è¾“å…¥æ¨¡å¼ä¸²(ENDç»“æŸ):\n");
     int str_cnt = 0;
     while (true) {
         scanf("%s", str[str_cnt]);
         if (strcmp((const char *)str[str_cnt], "END") == 0) {
-            printf("¿ªÊ¼·ÖÎö....\n\n");
+            printf("å¼€å§‹åˆ†æ....\n\n");
             break;
         }
         str_cnt++;
@@ -52,7 +52,7 @@ int main() {
             visit[short_arr[i][j]]++;
         }
     }
-    printf("´ÊÆµÍ³¼Æ±í£º\n");
+    printf("è¯é¢‘ç»Ÿè®¡è¡¨ï¼š\n");
     for (int i = 0; i < maps_cnt; ++i) {
         unsigned short ind = maps[i];
         char a = ind >> 8;
@@ -70,7 +70,7 @@ int main() {
     char buff[100];
     build(maps_cnt, arr);
     extract(arr[0], buff, huffman_code, 0);
-    printf("¹ş·òÂü±àÂë±í£º\n");
+    printf("å“ˆå¤«æ›¼ç¼–ç è¡¨ï¼š\n");
     for (int i = 0; i < maps_cnt; i++) {
         US ind = maps[i];
         char a = ind >> 8;
@@ -88,11 +88,11 @@ int main() {
     }
     
     UC quesion[128] = {0};
-    printf("¿ªÊ¼Ñ¯ÎÊ(END½áÊø)£º\n");
+    printf("å¼€å§‹è¯¢é—®(ENDç»“æŸ): \n");
     while (true) {
         scanf("%s", quesion);
         if (strcmp((const char *)quesion, "END") == 0) {
-            printf("³ÌĞò½áÊø....\n\n");
+            printf("ç¨‹åºç»“æŸ....\n\n");
             break;
         }
         int len = mystrlen(quesion);
