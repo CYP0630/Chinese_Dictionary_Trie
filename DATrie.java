@@ -280,7 +280,7 @@ public class DATrie {
         String keyWord = "清华大学生都是华人";
         List<Integer> result = daTrie.match(keyWord);
         System.out.println();
-        System.out.println("输入语句为："+keyWord);
+        System.out.println("The input sentence is："+keyWord);
 
         // Print the match result
         System.out.println();
