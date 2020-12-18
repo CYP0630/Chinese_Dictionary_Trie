@@ -5,7 +5,7 @@
 
 Goole Drive:https://drive.google.com/drive/folders/1d3kM1GR_KXPJZC8SqwSoEQsU5VeODZv7?usp=sharing
 
-## Weekly Report Record
+## Weekly Record
 ### Week 1: 16/11/2020 - 22/11/2020
 Reading related article <br>
 Write a basic trie <br>
@@ -20,6 +20,7 @@ Implemente Chinese Trie <br>
 ### Week 4: 07/12/2020 - 13/12/2020
 Optimizing Chinese Trie <br>
 Implemente Huffman Chinese Trie <br>
+Implemente Dobule-Array Chinese Trie <br>
 Start to write project report <br>
 
 ### Week 5: 14/12/2020 - 15/12/2020
