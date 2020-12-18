@@ -9,8 +9,8 @@
 
 using namespace std;
 
-#define MAX_SIZE 1000  //最大词长
-#define MAX_N 1000 //最大词数
+#define MAX_SIZE 1000  //Max single word length
+#define MAX_N 1000 //Max word size
 #define BASE 2
 #define BASE_LETTER '0'
 #define swap(a, b) { \
@@ -211,7 +211,7 @@ void match(trie_node *root, const char *str) {
         trie_node *q = p;
         while (q) {
             if (q->flag) {
-                printf("匹配到 : %s\n", q->word);
+                printf("Search Result : %s\n", q->word);
             }
             q = q->fail;
         }
